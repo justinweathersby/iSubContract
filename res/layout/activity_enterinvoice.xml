@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:background="@drawable/background" >
+    
+	<!-- Header Text -->
+  	<TextView
+        android:id="@+id/enterInvoiceHeaderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom= "20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:textColor="#07353a"
+        android:text="@string/new_timesheet_header" />
+      
+   <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+       <!-- Name -->
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/nameLabelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_lbl"
+                android:textColor="#07353a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords"/>
+        </TableRow>
+
+        <!-- Location -->
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/locationLabelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_lbl"
+                android:textColor="#07353a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/locationET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+                <requestFocus />
+        </TableRow>
+
+        <!-- Date -->
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/dateLabelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_lbl"
+                android:textColor="#07353a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/dateET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+        </TableRow>
+
+        <!-- Arrival -->
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/arrivalLabelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arrival_lbl"
+                android:textColor="#07353a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/arrivalET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" 
+                android:inputType="time"/>
+        </TableRow>
+    
+        <!-- Departure -->
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+	        <TextView
+	            android:id="@+id/departureLabelTV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/departure_lbl"
+	            android:textColor="#07353a"
+	            android:textSize="20sp" />
+	
+	        <EditText
+	            android:id="@+id/departureET"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+        </TableRow>
+        
+        <!-- Rate --> 
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        	<TextView
+	            android:id="@+id/rateLabelTV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rate_lbl"
+	            android:textColor="#07353a"
+	            android:textSize="20sp" />
+
+	        <EditText
+	            android:id="@+id/rateET"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:ems="10"
+	            android:inputType="numberDecimal" />
+        </TableRow>
+    </TableLayout>
+	
+	<!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:textSize="12sp" >
+      
+     	<Button
+        	android:id="@+id/saveBTN"
+        	android:layout_width="80dp"
+        	android:layout_height="80dp"
+        	android:text="@string/save_lbl" />
+      
+    	<Button
+        	android:id="@+id/clearBTN"
+        	android:layout_width="80dp"
+        	android:layout_height="80dp"
+        	android:layout_margin="20dp"
+        	android:text="@string/clear_lbl" />
+
+    	<Button
+        	android:id="@+id/backBTN"
+        	android:layout_width="80dp"
+        	android:layout_height="80dp"
+        	android:text="@string/back_lbl" />
+	</LinearLayout>
+
+</LinearLayout>

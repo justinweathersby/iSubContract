@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iSubContract</string>
+    <string name="action_settings">Settings</string>
+    <string name="date_lbl">Date</string>
+    <string name="location_lbl">Location</string>
+    <string name="name_lbl">Name</string>
+    <string name="arrival_lbl">Arrival</string>
+    <string name="departure_lbl">Departure</string>
+    <string name="rate_lbl">Rate</string>
+    <string name="new_timesheet_header">New Time Sheet</string>
+    <string name="edit_timesheet_header">Edit Time Sheet</string>
+    <string name="calendar_header">Calender</string>
+   
+    <string name="start_lbl">Start</string>
+    <string name="stop_lbl">Stop</string>
+    <string name="total_lbl">Total</string>
+    
+	<string name="save_lbl">Save</string>
+	<string name="add_lbl">Add</string>
+	<string name="clear_lbl">Clear</string>
+	<string name="back_lbl">Back</string>
+</resources>

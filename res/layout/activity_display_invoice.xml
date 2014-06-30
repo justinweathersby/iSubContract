@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:cacheColorHint="@android:color/transparent"
+    android:orientation="horizontal" >
+   
+    <!-- Header Text -->
+     <TextView
+	    android:id="@+id/editInvoiceHeaderTV"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@android:id/empty"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/edit_timesheet_header"
+	    android:textColor="#07353a"
+	    android:textSize="30sp"
+	    android:textStyle="bold"
+	    android:typeface="normal" />
+        
+     <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@color/charcoal">"
+
+       <!-- Name -->
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/nameLabelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_lbl"
+                android:textColor="#07353a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords"/>
+        </TableRow>
+
+        
+        <!-- Location -->
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/locationLabelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_lbl"
+                android:textColor="#07353a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/locationET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+                <requestFocus />
+        </TableRow>
+
+        <!-- Date -->
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/dateLabelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_lbl"
+                android:textColor="#07353a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/dateET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+        </TableRow>
+
+        <!-- Arrival -->
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/arrivalLabelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arrival_lbl"
+                android:textColor="#07353a"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/startET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" 
+                android:inputType="time"/>
+        </TableRow>
+    
+        <!-- Departure -->
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+	        <TextView
+	            android:id="@+id/departureLabelTV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/departure_lbl"
+	            android:textColor="#07353a"
+	            android:textSize="20sp" />
+	
+	        <EditText
+	            android:id="@+id/stopET"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+        </TableRow>
+        
+        <!-- Rate --> 
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        	<TextView
+	            android:id="@+id/rateLabelTV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/rate_lbl"
+	            android:textColor="#07353a"
+	            android:textSize="20sp" />
+
+	        <EditText
+	            android:id="@+id/rateET"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:ems="10"
+	            android:inputType="numberDecimal" />
+        </TableRow>
+        
+        <!-- Total --> 
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        	<TextView
+	            android:id="@+id/totalLabelTV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/total_lbl"
+	            android:textColor="#07353a"
+	            android:textSize="20sp" />
+
+	        <EditText
+	            android:id="@+id/totalET"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:ems="10"
+	            android:inputType="numberDecimal" />
+        </TableRow>
+    </TableLayout>
+    
+    
+     <!-- Buttons -->
+	<LinearLayout 
+	    android:id="@+id/footer" 
+	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" 
+   		android:orientation="horizontal"
+   		android:layout_alignParentBottom="true" 
+   		style="?android:attr/buttonBarStyle">
+
+	<Button android:id="@+id/addBTN" 
+   	    android:layout_width="wrap_content"
+       	android:layout_height="wrap_content" 
+       	android:layout_weight="1"
+       	android:text="@string/add_lbl" />
+	
+	<Button android:id="@+id/clearBTN" 
+   	    android:layout_width="wrap_content"
+       	android:layout_height="wrap_content" 
+       	android:layout_weight="1"
+       	android:text="@string/clear_lbl" />
+
+   	<Button android:id="@+id/backBTN" 
+   	    android:layout_width="wrap_content"
+       	android:layout_height="wrap_content" 
+       	android:layout_weight="1"
+       	android:text="@string/back_lbl" />
+  </LinearLayout>
+
+	
+   
+</RelativeLayout>
+
+<!-- 
+
+android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+
+ -->

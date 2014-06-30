@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent"
+    android:cacheColorHint="@android:color/transparent"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/transrowTV1"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:gravity="center">
+    </TextView>
+   
+    <TextView
+        android:id="@+id/transrowTV2"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:gravity="center">
+    </TextView>
+    <TextView
+        android:id="@+id/transrowTV3"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:gravity="center">
+    </TextView>
+    <TextView
+        android:id="@+id/transrowTV4"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:gravity="center">
+    </TextView>
+
+</LinearLayout>
+
+<!-- 
+
+android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+
+ -->

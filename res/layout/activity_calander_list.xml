@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+    
+    <!-- Header Text -->
+    <TextView
+	    android:id="@+id/calendarHeaderTV"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginBottom="20dp"
+	    android:text="@string/calendar_header"
+	    android:textColor="#07353a"
+	    android:textSize="30sp"
+	    android:textStyle="bold"
+	    android:typeface="normal" />
+    
+    
+    <!-- LinearLayout for the column headers -->	
+	<LinearLayout
+        android:id="@+id/listheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/calendarHeaderTV">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#07353a"
+            android:text="@string/name_lbl"
+        />
+        
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#07353a"
+            android:textStyle="bold"
+            android:text="@string/date_lbl"
+        />
+        
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#07353a"
+            android:textStyle="bold"
+            android:text="@string/location_lbl"
+        />
+        
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#07353a"
+            android:text="@string/total_lbl"
+        />
+        </LinearLayout>
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_below="@id/calendarHeaderTV">
+        <ListView  
+	         android:id="@android:id/list"
+	         android:layout_width="wrap_content" 
+	         android:layout_height="wrap_content"
+	    />
+		<TextView
+			android:id="@android:id/empty"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="8dp"
+	        android:paddingRight="8dp"
+	        android:layout_marginTop="30dp"
+	     />
+    </LinearLayout>
+
+      
+        
+	<!-- Buttons -->
+	<LinearLayout 
+	    android:id="@+id/footer" 
+	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" 
+   		android:orientation="horizontal"
+   		android:layout_alignParentBottom="true" 
+   		style="?android:attr/buttonBarStyle"
+   		>
+
+	<Button android:id="@+id/saveBTN" 
+   	    android:layout_width="wrap_content"
+       	android:layout_height="wrap_content" 
+       	android:layout_weight="1"
+       	android:text="@string/save_lbl" />
+	
+   	<Button android:id="@+id/clearBTN" 
+   	    android:layout_width="wrap_content"
+       	android:layout_height="wrap_content" 
+       	android:layout_weight="1"
+       	android:text="@string/clear_lbl" />
+
+   	<Button android:id="@+id/backBTN" 
+   	    android:layout_width="wrap_content"
+       	android:layout_height="wrap_content" 
+       	android:layout_weight="1"
+       	android:text="@string/back_lbl" />
+  </LinearLayout>
+
+	
+</RelativeLayout>

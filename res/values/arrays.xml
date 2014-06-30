@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="invoices_context_menu">
+		<item>Edit record</item>
+		<item>Delete record</item>
+		<item>Cancel</item>
+	</string-array>
+    
+</resources>
